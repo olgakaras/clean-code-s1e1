@@ -20,8 +20,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .info {
     text-align: center;
   }
@@ -72,9 +71,7 @@ button:hover {
   color: #3a3a3a;
 }
 
-/* Heading */
-h3,
-label[for="block__new-task"] {
+.block__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,7 +99,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="block__new-task"] {
+.block__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -158,11 +155,11 @@ li > input[type="text"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li input[type="text"] {
   display: none;
 }
 
-ul .block__edit-mode input[type=text] {
+ul .block__edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
