@@ -1,5 +1,4 @@
-/* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -12,18 +11,20 @@ body {
   text-align: right;
 }
 
-.info img {
+.info__image {
   width: 100%;
 }
 
-.info .info__link {
+.info__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
+
   .info {
     text-align: center;
   }
+
 }
 
 .block {
@@ -57,7 +58,7 @@ button {
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -67,7 +68,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
@@ -81,7 +82,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -94,22 +95,20 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input[type="text"]:focus {
   color: #333;
 }
 
-/* New Task */
 .block__title {
   display: block;
   margin: 0 0 20px;
 }
 
-#block__new-task {
+.block__add-task {
   width: 318px;
 }
 
-/* Task list */
-li {
+.block__li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -119,51 +118,52 @@ li {
   align-items: center;
 }
 
-li > * {
+.block__li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.block__li > .input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.block__li > .block__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.block__li > .input[type="text"] {
   width: 226px;
 }
 
-.block__delete img {
+.block__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.block__delete img:hover {
+.block__delete-img:hover {
   transform: rotateZ(0);
 }
 
-/* Completed */
-#block__completed-tasks label {
+.block__task-completed
+.block__label {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
-ul li input[type="text"] {
+.block_input-text {
   display: none;
 }
 
-ul .block__edit-mode input[type="text"] {
+.block__edit-mode
+.block_input-text {
   display: inline-block;
   width: 224px;
 }
 
-ul .block__edit-mode label {
+.block__edit-mode
+.block__item {
   display: none;
 }
